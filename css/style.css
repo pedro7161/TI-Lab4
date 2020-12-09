@@ -1,0 +1,128 @@
+.banner{
+    background-color: rgb(207, 0, 0);
+    color: white;
+    padding: 10px;
+}
+body{
+    margin: 0;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+}
+
+.banner #title{
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    text-decoration: none; /* Tira o sublinhado dos links */
+}
+.icon{
+    font-size: 42px;
+    float: right;
+}
+.topnav{
+    background-color: rgb(53, 52, 52);
+    color: white;
+    display: none;
+}
+.topnav a{
+    padding: 5px;
+    display: block;
+    text-align: center;
+    text-decoration: none; /* Tira o sublinhado dos links */
+
+}
+.topnav a:hover{
+    color: rgb(160, 158, 158);
+}
+.icon:hover{
+    color: rgb(95, 6, 6);
+}
+
+
+/* Modificar o estilo dos links azul sublinado por defeito */
+#title:visited, #title:active, #title:link{
+    color: white;
+}
+.topnav a:visited, .topnav a:active, .topnav a:link{
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    display: flex;
+    border: 1px solid rgb(200, 200, 200);
+    margin: 5px;
+}
+.info_wrapper{
+    flex: 50%;
+    padding: 5px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.img_wrapper{
+    display: flex;
+    flex: 50%;
+}
+.cardTitle{
+    font-size: 24px;
+    margin: 0;
+}
+.first-letter {
+    font-size: 35px;
+    line-height: 70px;
+  }
+.cardPrice{
+    color: gray;
+}
+.cardBtn{
+    background-color: red;
+    border: none;
+    color: white;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.img_wrapper img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+/*pc em baixo*/
+
+@media only screen and (min-width: 768px){
+
+
+    .icon{
+        display: none;
+    }
+    .topnav{
+        display: flex;
+        justify-content: center;
+    }
+    .topnav a{
+        padding: 5px 40px 5px 40px;
+    }
+
+    .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card{
+        flex: 0 35%;
+    }
+
+
+
+
+   
+}
