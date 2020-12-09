@@ -95,7 +95,10 @@ body{
 
 
 
-
+h1{
+color: rgb(92, 88, 88);
+text-align: center;
+}
 
 
 /*pc em baixo*/
