@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Online</title>
+
+    <!-- Importar o ficheiro style.css que está na pasta css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Importar o JQuery através de um Content Delivery Network-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="crossorigin="anonymous"></script>
+    <!-- Importar a biblioteca FontAwesome que contêm icones-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="crossorigin="anonymous"
+        />
+
+    <!-- Importar uma fonte do Google para o titulo do banner -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+        rel="stylesheet">
+</head>
+
+<body style="background-image: url('https://www.delonghi.com/Global/recipes/multifry/pizza_fresca.jpg');background-repeat: no-repeat;background-size: cover;">
+
+    <div class="banner">
+        <a id="title" href="index.html">Pizzaria</a>
+        <a class="icon">
+            <i class="fas fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="topnav">
+        <a href="menu.html">Menu</a>
+        <a href="pizzas.html">Pizzas</a>
+        <a href="Massas.html">Massas</a>
+        <a href="encomendar.html">Encomendar</a>
+    </div>
+
+
+    <div style="width: 70%;margin-left: auto;margin-right: auto;">
+        <h1>bem vindo ha pizaria delicia</h1>
+        <h3>Formulário de encomenda</h3>
+        <p>para fazer a sua encomenda preencha o formulario que se segue </p>
+        <div style="width: 100%;">
+            <form action="mailto:nomealuno@my.istec.pt" method="post" enctype="text/plain">
+                <fieldset>
+                    <legend>informaçao pessoal:</legend>
+                    <label for="nome_id">Nome: </label>
+                    <input type="text" name="nome" id="nome_id" placeholder="Qual o seu nome?" maxlength="10" required>
+                    <br>
+                    <br>
+
+
+                    <label for="email_id">E-mail: </label>
+                    <input type="email" name="email" id="email_id" placeholder="Qual o
+seu email?" required>
+                    <br>
+                    <br>
+                    <label for="tel_id ">Contato: </label>
+
+                    <input type="tel" name="tel" id="tel_id" placeholder="Qual o seu contato?" pattern="[0-9]{9}"
+                        maxlength="9" minlength="9" required>
+                </fieldset>
+                <br>
+                <br>
+
+
+        </div>
+        <div style="width: 100%;">
+
+            <fieldset>
+                <legend>Escolha a pizza</legend>
+                <p>Pizza:</p>
+
+                <input type="checkbox" name="topping" value="margherita" style=" " required>
+                <label for="margherita">margherita</label ><br>
+                <input type="checkbox" name="topping" value="rustica" required>
+                <label for="rustica">rustica</label><br>
+                <input type="checkbox" name="topping" value="primavera"required>
+                <label for="primavera">primavera</label><br>
+                <input type="checkbox" name="topping" value="calzone"required>
+                <label for="calzone">calzone</label>
+
+
+                <br>
+                <br>
+                <label for="massa">Tipos de massa:</label ><br>
+                <select name="tipo_De_massa" id="massa">
+                    <option value="normal">normal</option>
+                    <option value="maior">maior</option>
+                    <option value="fofa">fofa</option>
+                    <option value="dura">dura</option>
+                </select>
+
+                <p>ingredientes extra:</p>
+
+                <input type="checkbox" name="Textra" value="azeitonas">
+                <label for="azeitonas">azeitonas</label><br>
+                <input type="checkbox" name="Textra" value="cebola">
+                <label for="cebola">cebola</label><br>
+                <input type="checkbox" name="Textra" value="milho">
+                <label for="milho">milho</label><br>
+                <input type="checkbox" name="Textra" value="camarao">
+                <label for="camarao">camarao</label><br>
+                <input type="checkbox" name="Textra" value="ananas">
+                <label for="ananas">ananas</label>
+            </fieldset>
+            <br>
+            <br>
+
+
+        </div>
+
+
+        <div style="width: 100%;">
+
+            <fieldset>
+                <legend>informaçao pessoal:</legend>
+                <label for="morada_id">Morada: </label><br>
+                <textarea id="morada_id" name="morada" placeholder="Qual o seu email?"required></textarea>
+                <br>
+                <br>
+
+                <label for="postal_id">codigo postal: </label>
+
+                <input type="tel" name="postal" id="postal_id" placeholder="0000-000" pattern="[0-9]{4}+-[0-9]{3}"
+                    maxlength="8" minlength="8" required>
+
+                <br>
+                <br>
+                <label for="tel_id">Nif: </label>
+
+                <input type="tel" name="tel" id="tel_id" placeholder="NIF da fatura" pattern="[0-9]{9}" maxlength="9"
+                    minlength="9" required>
+
+                <p> metodo de pagamento</p>
+
+                <input type="radio" name="Mpagamento" value="dinheiro" required>
+                <label for="dinheiro">dinheiro</label>
+                <input type="radio" name="Mpagamento" value="multibanco" required>
+                <label for="multibanco">multibanco</label>
+                <input type="radio" name="Mpagamento" value="MBway" required>
+                <label for="MBway">MBway</label>
+
+
+
+            </fieldset>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Confirmar">
+        </div>
+        </form>
+
+
+    </div>
+    <script
+    src="js/main.js">
+                                                                                                </script>
+</body>
+
+</html>
