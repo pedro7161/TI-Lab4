@@ -3,9 +3,11 @@ a{
     color:black;
     text-decoration: none;
 }
+.banner_complete{
+    top: 0;
+width: 100%;
+    position: fixed ;
 
-.mobile{
-    position: fixed;
 }
 input[type=button], input[type=submit], input[type=reset] {
     height: 50px;
@@ -229,6 +231,6 @@ padding: 10px 100px 10px 100px;
 .banner_complete{
 
     position: relative;
-    
+
 }
-}
+}   
