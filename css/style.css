@@ -170,7 +170,7 @@ display: flex;
 
     box-shadow: -20px 17px 5px 0px rgba(0,0,0,0.31);
     width: 100%;
-  
+  padding-bottom: 0px;
 
 }
 input[type=button], input[type=submit], input[type=reset] {
